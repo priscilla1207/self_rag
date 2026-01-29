@@ -1,4 +1,6 @@
+# =====================
 # Environment variables
+# =====================
 .env
 .env.*
 app/.env
@@ -7,7 +9,9 @@ app/.env
 .env.test.local
 .env.production.local
 
+# =====================
 # Secrets and Keys
+# =====================
 *.pem
 *.key
 *.p12
@@ -24,7 +28,9 @@ credentials.json
 token.json
 client_secrets.json
 
+# =====================
 # Python
+# =====================
 __pycache__/
 *.pyc
 *.pyo
@@ -36,7 +42,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# =====================
 # Distribution / packaging
+# =====================
 .Python
 build/
 develop-eggs/
@@ -56,7 +64,9 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# =====================
 # Unit test / coverage
+# =====================
 .coverage
 .coverage.*
 .cache
@@ -67,19 +77,66 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# Databases
+# =====================
+# Databases (Local Only)
+# =====================
 *.db
 *.sqlite3
 
-# Logs
+# =====================
+# Logs & Tracing
+# =====================
 *.log
+logs/
+*.out
 
+# =====================
 # Editor directories
+# =====================
 .vscode/
 .idea/
 
+# =====================
 # Local uploads
+# =====================
 uploads/
 
-# Local Vector DB
+# =====================
+# Vector DB / Embeddings / Chroma / Qdrant
+# =====================
 qdrant_data/
+chroma/
+chroma_data/
+faiss_index/
+indexes/
+embeddings/
+
+# =====================
+# Docker & runtime artifacts
+# =====================
+docker-data/
+*.pid
+*.sock
+active_docker.db
+
+# =====================
+# Checkpoints / Models / Experiments (optional)
+# =====================
+checkpoints/
+runs/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# =====================
+# Cache / Temp
+# =====================
+tmp/
+temp/
+*.tmp
+
+# =====================
+# Ignore DS_Store (macOS)
+# =====================
+.DS_Store
